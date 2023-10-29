@@ -5,20 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoggedInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUser"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNumber"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastro de carros"
-        android:id="@+id/cadastroCarros"
-        android:onClick="cadastroCarros"/>
+        android:id="@+id/ex1"
+        android:onClick="gotoEx1"
+        android:text="Ir para Exercício 1"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/login"
-        android:onClick="login"/>
+        android:id="@+id/logout"
+        android:onClick="logout"
+        android:text="Logout"/>
 
 </LinearLayout>
